@@ -184,11 +184,24 @@ footer span {
 }
 
 @media only screen and (max-width: 1024px) {
-  .mini-banner h1, .mini-banner h4 {
+  /*.mini-banner h1, .mini-banner h4 {
     font-size: 1.25rem;
   }
   .mini-banner {
-    padding: 1rem 2rem;
-    width: 15rem;
+    padding: 1.5rem 2.5rem;
+    width: 17rem;
+  }*/
+  html {
+    font-size: 12px;
+  }
+  nav ul li{
+    display: none;
+
+  }
+  .image-pen img, .image-watch img {
+    width: 47%;
+  }
+  image-glasses img {
+    display: none;
   }
 }
