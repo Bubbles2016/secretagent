@@ -3,10 +3,18 @@ html {
 }
 
 body {
-  width: 960px;
-  margin: 0 192px;
   font-family: helvetica, sans-serif;
   color: white;
+  line-height: 1.4;
+}
+
+h1, h4{
+  font-weight: bold;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 header {
@@ -16,7 +24,7 @@ header {
   height: 70px;
 }
 
-.logo {
+.logo .container {
   display: flex;
   align-items: center;
   margin-left: 0.5rem;
@@ -31,27 +39,37 @@ header {
 
 .logo img {
   margin-right: 25px;
+  height: 1.5rem;
 }
 
 .banner {
-  height: 25rem;
-  background: url("../../resources/images/moto.jpeg") no-repeat center center;
+  background: url("../../resources/images/moto.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
+  height: 25rem;
 }
 
 .mini-banner {
-  width: 20rem;
-  background-color: black;
   position: relative;
   top: 9rem;
-  left: 150px;
+  width: 20rem;
+  padding: 2rem 3rem;
+  background-color: black;
+  color: white;
 }
 
-.mini-banner h4 {
+.mini-banner h1 {
+  margin: 0.25rem 0;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+/*.mini-banner h4 {
   padding-top: 2rem;
   padding-left: 3rem;
   font-family: helvetica;
-  /*font-size: 1rem;*/
+  font-size: 1rem;
   font-weight: bold;
 }
 
@@ -62,29 +80,26 @@ header {
   padding-bottom: 3rem;
   font-family: helvetica;
   font-weight: bold;
-}
+}*/
 
 nav {
   background: firebrick;
-  height: 45px;
+  /*height: 45px;*/
   width: 100%;
   text-align: left;
   /*margin-bottom: 40px;*/
 }
 
 nav ul {
-  margin-left: 100px;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 0;
 }
 
 nav ul li {
   font-size: 1rem;
   margin: 0.75rem 1.25rem;
-}
-
-.container {
-  width: 960px;
-  margin: 0 auto;
 }
 
 .gallery {
@@ -166,5 +181,14 @@ footer {
 
 footer span {
   margin-left: 1.65rem;
+}
 
+@media only screen and (max-width: 1024px) {
+  .mini-banner h1, .mini-banner h4 {
+    font-size: 1.25rem;
+  }
+  .mini-banner {
+    padding: 1rem 2rem;
+    width: 15rem;
+  }
 }
