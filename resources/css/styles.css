@@ -102,6 +102,10 @@ nav ul li {
   margin: 0.75rem 1.25rem;
 }
 
+.mobile-nav.container {
+  display: none;
+}
+
 .gallery {
   display: flex;
   justify-content: space-between;
@@ -192,16 +196,30 @@ footer span {
     width: 17rem;
   }*/
   html {
-    font-size: 12px;
+    font-size: 16px;
   }
-  nav ul li{
-    display: none;
 
+  nav ul li {
+    display: none;
   }
-  .image-pen img, .image-watch img {
+
+  .mobile-nav.container {
+    display: show;
+  }
+
+  .image-pen img {
     width: 47%;
   }
-  image-glasses img {
+  .image-watch img {
+    width: 47%;
+  }
+
+  .image-glasses img {
     display: none;
   }
+
+  #product-glasses {
+    display: none;
+  }
+
 }
