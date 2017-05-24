@@ -3,6 +3,7 @@ html {
 }
 
 body {
+  width: 960px;
   margin: 0 192px;
   font-family: helvetica, sans-serif;
   color: white;
@@ -10,19 +11,22 @@ body {
 
 header {
   background-color: black;
-  height: 70px;
   display: flex;
   align-items: center;
+  height: 70px;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  margin-left: 150px;
+  margin-left: 0.5rem;
+  height: 1.5rem;
 }
 
 .logo h1 {
-  font-size: 1em;
+  font-size: 1rem;
+  margin: 0.66rem auto 0.66rem 1rem;
+  font-family: helvetica;
 }
 
 .logo img {
@@ -30,38 +34,42 @@ header {
 }
 
 .banner {
-  height: 400px;
+  height: 25rem;
   background: url("../../resources/images/moto.jpeg") no-repeat center center;
   background-size: cover;
 }
 
 .mini-banner {
-  height: 12em;
-  width: 21em;
+  width: 20rem;
   background-color: black;
   position: relative;
-  top: 135px;
+  top: 9rem;
   left: 150px;
 }
 
 .mini-banner h4 {
+  padding-top: 2rem;
+  padding-left: 3rem;
+  font-family: helvetica;
+  /*font-size: 1rem;*/
   font-weight: bold;
 }
 
 .mini-banner h1 {
-  font-size: 1.5rem;
-}
-
-.mini-banner h4, .mini-banner h1 {
-  padding-top: 40px;
-  padding-left: 50px;
+  font-size: 2rem;
+  padding-left: 3rem;
+  padding-top: 0.25rem;
+  padding-bottom: 3rem;
+  font-family: helvetica;
+  font-weight: bold;
 }
 
 nav {
-  background: #b22222;
+  background: firebrick;
   height: 45px;
   width: 100%;
   text-align: left;
+  /*margin-bottom: 40px;*/
 }
 
 nav ul {
@@ -71,6 +79,92 @@ nav ul {
 
 nav ul li {
   font-size: 1rem;
-  margin-right: 70px;
-  padding-top: 10px;
+  margin: 0.75rem 1.25rem;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product {
+  border: 4px solid black;
+  margin-top: 3rem;
+  width: 30%;
+}
+
+.image-pen img, .image-watch img {
+  height: 9rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 3rem;
+}
+
+.image-glasses img {
+  width: 9rem;
+  padding-top: 4.3rem;
+  padding-left: 2.8rem;
+  padding-bottom: 4.5rem;
+
+}
+
+.description {
+  display: block;
+  background-color: black;
+  font-family: helvetica;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.location, .hours {
+  background-color: black;
+  width: 35%;
+  margin-top: 3rem;
+}
+
+.location {
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.hours {
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#coordinates {
+  color: black;
+  /*margin-left: 1.65rem;*/
+}
+
+#working-hours {
+  color: black;
+  padding-left: 408px;
+}
+
+footer {
+  display: flex;
+  height: 10rem;
+  background-color: black;
+  text-align: left;
+  margin-top: 4rem;
+  color: white;
+  align-items: center;
+}
+
+footer span {
+  margin-left: 1.65rem;
+
 }
