@@ -165,7 +165,7 @@ nav {
 }
 .numbers {
   display: flex;
-  justify-content: space-around;
+  /*justify-content: space-around;*/
   align-items: center;
 }
 
@@ -176,7 +176,7 @@ nav {
 
 #working-hours {
   color: black;
-  /*padding-left: 408px;*/
+  padding-left: 408px;
 }
 
 footer {
@@ -189,9 +189,14 @@ footer {
   align-items: center;
 }
 
-footer span {
+/*footer span {
   margin-left: 1.65rem;
-}
+}*/
+
+  footer p {
+    text-align: left;
+    margin-left: 1.65rem;
+  }
 
 @media only screen and (max-width: 1024px) {
   html {
@@ -217,31 +222,70 @@ footer span {
     text-align: center;
     padding-left: 0;
   }
+  .image-pen img, .image-watch img {
+    padding-left: 0;
+  }
   .info {
+    display: flex;
     justify-content: space-around;
-    width: 90%;
     margin: 0.5rem auto;
 
   }
-  .location {
+  /*.location {
     width: 35%;
-  }
+  }*/
 
- /*.hours {
-   padding-left: 0;
- }*/
+  .hours, .location {
+   width: 44%;
+   margin-right: 5px;
+ }
   .numbers {
     display: flex;
-    justify-content: space-around;
+    /*justify-content: space-around;*/
     align-items: center;
   }
-  #coordinates {
-    width: 35%;
-    padding-left: 0;
-  }
   #working-hours {
-    width: 35%;
-    padding-left: 0;
+    padding-left: 338px;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .mini-banner {
+    width: 100%;
+    top: 17.3rem;
   }
 
+  .mini-banner h4 {
+    font-family: helvetica;
+    font-size: 0.77rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-left: 2rem
+  }
+
+  .mini-banner h1 {
+    font-family: helvetica;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 2rem;
+  }
+
+  .product {
+    width: 90%;
+  }
+  #product-watch {
+    display: none;
+  }
+
+  .info {
+    display: block;
+  }
+
+  .location, .hours {
+    margin-left: 1.15rem;
+  }
+
+  footer p {
+    text-align: center;
+  }
 }
