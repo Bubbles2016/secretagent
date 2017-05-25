@@ -163,6 +163,11 @@ nav {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+.numbers {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
 #coordinates {
   color: black;
@@ -199,30 +204,44 @@ footer span {
     display: block;
     text-align: center;
   }
-
   .product {
     width: 47%;
   }
-
   #product-glasses {
     display: none;
   }
-
   .gallery {
     justify-content: space-around;
   }
-
-  .image-pen img, .image-watch img {
-    /*height: 9rem;
-    padding-top: 3rem;
-    padding-bottom: 2rem;
-    padding-left: 7rem;*/
+  .image-pen, .image-watch {
+    text-align: center;
+    padding-left: 0;
   }
-
   .info {
     justify-content: space-around;
+    width: 90%;
+    margin: 0.5rem auto;
+
   }
   .location {
     width: 35%;
   }
+
+ /*.hours {
+   padding-left: 0;
+ }*/
+  .numbers {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #coordinates {
+    width: 35%;
+    padding-left: 0;
+  }
+  #working-hours {
+    width: 35%;
+    padding-left: 0;
+  }
+
 }
