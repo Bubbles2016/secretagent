@@ -65,23 +65,6 @@ header {
   line-height: 1.2;
 }
 
-/*.mini-banner h4 {
-  padding-top: 2rem;
-  padding-left: 3rem;
-  font-family: helvetica;
-  font-size: 1rem;
-  font-weight: bold;
-}
-
-.mini-banner h1 {
-  font-size: 2rem;
-  padding-left: 3rem;
-  padding-top: 0.25rem;
-  padding-bottom: 3rem;
-  font-family: helvetica;
-  font-weight: bold;
-}*/
-
 nav {
   background: firebrick;
   /*height: 45px;*/
@@ -141,12 +124,37 @@ nav {
   text-align: center;
 }
 
-.info {
+.business-info { /*supporting*/
   display: flex;
   justify-content: space-between;
 }
 
-.location, .hours {
+.info {
+  width: 35%;
+}
+
+.title {
+  background-color: black;
+  padding: 1rem 1.25rem;
+  color: white;
+  /*max-width: 10rem;*/
+  margin-top: 3rem;
+  font-size: 1rem;
+}
+
+.info p {
+  color: black;
+  /*padding: 1rem 0;*/
+  line-height: 1.4rem;
+  font-family: helvetica;
+}
+
+/*.info {
+  display: flex;
+  justify-content: space-between;
+}*/
+
+/*.location, .hours {
   background-color: black;
   width: 35%;
   margin-top: 3rem;
@@ -166,18 +174,18 @@ nav {
 .numbers {
   display: flex;
   /*justify-content: space-around;*/
-  align-items: center;
+/*  align-items: center;
 }
 
 #coordinates {
   color: black;
   /*margin-left: 1.65rem;*/
-}
+/*}
 
 #working-hours {
   color: black;
   padding-left: 408px;
-}
+}*/
 
 footer {
   display: flex;
@@ -192,11 +200,10 @@ footer {
 /*footer span {
   margin-left: 1.65rem;
 }*/
-
-  footer p {
-    text-align: left;
-    margin-left: 1.65rem;
-  }
+footer p {
+  text-align: left;
+  margin-left: 1.65rem;
+}
 
 @media only screen and (max-width: 1024px) {
   html {
@@ -226,66 +233,51 @@ footer {
     padding-left: 0;
   }
   .info {
-    display: flex;
     justify-content: space-around;
-    margin: 0.5rem auto;
-
-  }
-  /*.location {
-    width: 35%;
-  }*/
-
-  .hours, .location {
-   width: 44%;
-   margin-right: 5px;
- }
-  .numbers {
-    display: flex;
-    /*justify-content: space-around;*/
-    align-items: center;
-  }
-  #working-hours {
-    padding-left: 338px;
   }
 }
 
 @media only screen and (max-width: 470px) {
-  .mini-banner {
-    width: 100%;
-    top: 17.3rem;
-  }
+.mini-banner {
+  width: 100%;
+  top: 17.3rem;
+}
 
-  .mini-banner h4 {
-    font-family: helvetica;
-    font-size: 0.77rem;
-    font-weight: bold;
-    margin-top: 1rem;
-    margin-left: 2rem
-  }
+.mini-banner h4 {
+  font-family: helvetica;
+  font-size: 0.77rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-left: 2rem
+}
 
-  .mini-banner h1 {
-    font-family: helvetica;
-    font-size: 1rem;
-    font-weight: bold;
-    margin-left: 2rem;
-  }
+.mini-banner h1 {
+  font-family: helvetica;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-left: 2rem;
+}
 
-  .product {
-    width: 90%;
-  }
-  #product-watch {
-    display: none;
-  }
+.product {
+  width: 90%;
+}
 
-  .info {
-    display: block;
-  }
+#product-watch {
+  display: none;
+}
 
-  .location, .hours {
-    margin-left: 1.15rem;
-  }
+.business-info {
+  display: block;
+}
 
-  footer p {
-    text-align: center;
-  }
+.info {
+  width: 90%;
+  margin-left: 1.15rem;
+}
+
+footer p {
+  width: 100%;
+  text-align: center;
+}
+
 }
