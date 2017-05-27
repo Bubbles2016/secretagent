@@ -1,5 +1,10 @@
 html {
   font-size: 18px;
+  box-sizing: border-box; /*to avoid horizontal scrolling on mobile screen*/
+}
+/*to avoid horizontal scrolling on mobile screen*/
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body {
@@ -16,6 +21,9 @@ h1, h4{
   max-width: 960px;
   margin: 0 auto;
 }
+/*.logo {
+  max-width: 960px;
+}*/
 
 header {
   background-color: black;
