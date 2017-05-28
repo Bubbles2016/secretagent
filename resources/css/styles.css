@@ -1,11 +1,11 @@
 html {
   font-size: 18px;
-  box-sizing: border-box; /*to avoid horizontal scrolling on mobile screen*/
+  /*box-sizing: border-box;*/ /*to avoid horizontal scrolling on mobile screen*/
 }
 /*to avoid horizontal scrolling on mobile screen*/
-*, *:before, *:after {
+/**, *:before, *:after {
   box-sizing: inherit;
-}
+}*/
 
 body {
   font-family: helvetica, sans-serif;
@@ -157,44 +157,6 @@ nav {
   font-family: helvetica;
 }
 
-/*.info {
-  display: flex;
-  justify-content: space-between;
-}*/
-
-/*.location, .hours {
-  background-color: black;
-  width: 35%;
-  margin-top: 3rem;
-}
-
-.location {
-  padding-left: 2rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.hours {
-  padding-left: 2rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-.numbers {
-  display: flex;
-  /*justify-content: space-around;*/
-/*  align-items: center;
-}
-
-#coordinates {
-  color: black;
-  /*margin-left: 1.65rem;*/
-/*}
-
-#working-hours {
-  color: black;
-  padding-left: 408px;
-}*/
-
 footer {
   display: flex;
   height: 10rem;
@@ -205,9 +167,6 @@ footer {
   align-items: center;
 }
 
-/*footer span {
-  margin-left: 1.65rem;
-}*/
 footer p {
   text-align: left;
   margin-left: 1.65rem;
